@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edward McDugald</title>
+<meta name="description" content="Edward McDugald, applied mathematician. Pattern formation, order parameters from data, and generative models for physical systems.">
+<link rel="canonical" href="https://emcdugald.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Edward McDugald">
+<meta property="og:description" content="Applied mathematician. Pattern formation, order parameters from data, and generative models for physical systems.">
+<meta property="og:url" content="https://emcdugald.github.io/">
+<meta property="og:image" content="https://emcdugald.github.io/img/patterns.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Edward McDugald",
+  "givenName": "Edward",
+  "familyName": "McDugald",
+  "url": "https://emcdugald.github.io/",
+  "image": "https://emcdugald.github.io/img/headshot.jpg",
+  "email": "mailto:edward.mcdugald@gmail.com",
+  "jobTitle": "Applied Mathematician",
+  "description": "Applied mathematician (PhD, University of Arizona, 2026) working on pattern formation, order-parameter extraction from data, and generative models for physical systems.",
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "University of Arizona"},
+    {"@type": "CollegeOrUniversity", "name": "Northern Arizona University"}
+  ],
+  "knowsAbout": ["Applied mathematics", "Pattern formation", "Stripe patterns", "Swift-Hohenberg equation", "Scientific machine learning", "Diffusion models", "System identification"],
+  "address": {"@type": "PostalAddress", "addressLocality": "Tucson", "addressRegion": "AZ", "addressCountry": "US"},
+  "sameAs": [
+    "https://github.com/EMcDugald",
+    "https://www.linkedin.com/in/edward-mcdugald"
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE  personal academic page: calm, plain, a little warm
+   IDEA   a printed stripe pattern, like the zigzag figure on his poster
+   PICTURE a full-width knee bend drawn live from the phase solution
+   COLOUR white ground, near-black stripes and ink, concrete bands, one cobalt accent
+   TYPE   Hanken Grotesk throughout, weight for contrast
+   LAYOUT stripe band across the top, portrait card overlapping its lower edge; sections below in two columns, one on phones */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#121316);--ink:light-dark(#16181d,#ecebe7);--soft:light-dark(#55585f,#a9aab0);--band:light-dark(#efefec,#1b1c20);--rule:light-dark(#d9d9d4,#2c2d33);--acc:light-dark(#2343d6,#93a4ff);--stripe:light-dark(#1c1f26,#d8d7d1)}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:24px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:var(--acc);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:2px}
+h1,h2,h3{line-height:1.08;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1{font-size:clamp(36px,5vw,52px);font-weight:700}
+h2{font-size:clamp(28px,3.4vw,36px);font-weight:700;margin-bottom:22px}
+h3{font-size:19px;font-weight:600;letter-spacing:-.01em}
+p{margin:0 0 14px}
+.wrap{max-width:1080px;margin:0 auto}
+.band{padding-block:clamp(36px,5vw,72px);padding-inline:max(5vw,16px)}
+.alt{background:var(--band)}
+.hero{margin:0;padding:clamp(16px,3vw,32px) max(5vw,16px) 0}
+.hero img{width:100%;max-width:1080px;height:auto;margin:0 auto;border-radius:4px}
+.cap{max-width:1080px;margin:8px auto 0;color:var(--soft);font-size:14px}
+.intro{padding-inline:max(5vw,16px)}
+.card{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:168px minmax(0,1fr);gap:28px;align-items:center;padding:28px 0 30px}
+.photo{width:168px;height:168px;border-radius:50%;object-fit:cover}
+.role{font-size:19px;color:var(--soft);margin:8px 0 16px}
+.links{display:flex;flex-wrap:wrap;gap:6px 22px;font-weight:600}
+.links a{display:inline-flex;align-items:center;min-height:44px}
+nav{border-block:1px solid var(--rule);padding-inline:max(5vw,16px)}
+nav .wrap{display:flex;gap:4px 26px;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;display:inline-flex;align-items:center;min-height:48px}
+nav a:hover{color:var(--acc)}
+.two{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(28px,5vw,64px)}
+.facts{margin:4px 0 0;padding:0;list-style:none;border-top:2px solid var(--ink)}
+.facts li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;padding:10px 0;border-bottom:1px solid var(--rule);font-size:16px}
+.facts span:last-child{color:var(--soft);white-space:nowrap}
+.lead{font-size:clamp(19px,2vw,22px);line-height:1.45;font-weight:500}
+.diss{border-left:3px solid var(--ink);padding-left:22px;margin-bottom:40px}
+.diss h3{font-size:clamp(21px,2.4vw,25px);margin-bottom:12px;font-weight:700}
+.meta{color:var(--soft);font-size:15px}
+.rows{display:grid;gap:0}
+.row{display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px;padding:18px 0;border-top:1px solid var(--rule)}
+.row:last-child{border-bottom:1px solid var(--rule)}
+.row .when{color:var(--soft);font-size:15px;line-height:1.5;padding-top:2px}
+.row .when b{display:block;color:var(--ink);font-weight:600}
+.row p{margin:6px 0 0}
+.sub{font-size:21px;margin:44px 0 6px}
+.note{color:var(--soft);font-size:15px;margin:-10px 0 18px}
+ol.pubs{margin:0;padding:0;list-style:none;counter-reset:p}
+ol.pubs li{padding:14px 0 14px 44px;border-top:1px solid var(--rule);position:relative;counter-increment:p}
+ol.pubs li:last-child{border-bottom:1px solid var(--rule)}
+ol.pubs li::before{content:counter(p);position:absolute;left:0;top:14px;font-weight:700;color:var(--soft)}
+.venue{font-style:italic}
+.plain{margin:0;padding:0;list-style:none}
+.plain li{padding:10px 0;border-top:1px solid var(--rule)}
+.plain li:last-child{border-bottom:1px solid var(--rule)}
+.contact .lead a{font-weight:600;overflow-wrap:anywhere}
+footer{padding:22px max(5vw,16px) 34px;color:var(--soft);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+@media(max-width:760px){.two{grid-template-columns:minmax(0,1fr)}.row{grid-template-columns:minmax(0,1fr);gap:2px}.row .when b{display:inline;margin-right:8px}}
+@media(max-width:600px){.card{grid-template-columns:minmax(0,1fr);gap:14px;padding:22px 0}.photo{width:132px;height:132px}.role{font-size:17px}}
+</style>
+</head>
+<body>
+
+<header>
+  <figure class="hero">
+    <img src="img/patterns.jpg" alt="A collage of stripe patterns: sand ripples, a saguaro cactus with a dislocation in its ribs, a fingerprint, other natural stripe patterns, and a simulated labyrinth pattern" width="1744" height="618">
+    <figcaption class="cap">Stripe patterns everywhere: sand ripples, a saguaro with a dislocation in its ribs, a fingerprint, and (right) a computer simulation.</figcaption>
+  </figure>
+  <div class="intro">
+    <div class="card">
+      <img class="photo" src="img/headshot.jpg" alt="Portrait of Edward McDugald" width="480" height="480">
+      <div>
+        <h1>Edward McDugald</h1>
+        <p class="role">Applied mathematician. PhD, Applied Mathematics, University of Arizona, 2026.</p>
+        <div class="links">
+          <a href="mailto:edward.mcdugald@gmail.com">Email</a>
+          <a href="https://github.com/EMcDugald">GitHub</a>
+          <a href="https://www.linkedin.com/in/edward-mcdugald">LinkedIn</a>
+          <a href="cv.pdf">CV (PDF)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav aria-label="Sections">
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#funding">Funding</a>
+    <a href="#publications">Publications and talks</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+<section class="band" id="about">
+  <div class="wrap two">
+    <div>
+      <h2>About</h2>
+      <p class="lead">I study how patterns form and how they break: the stripes in a fingerprint, ripples in sand, the rolls in a heated fluid.</p>
+      <p>Most of my work sits where differential equations meet data. I build methods that read the structure hidden in simulations, and I use machine learning, especially generative models, to reconstruct and generate physical fields such as turbulent flows, ocean waves and atomic structures.</p>
+      <p>Before graduate school I spent five years at Nationwide Insurance, first as an actuarial analyst and then as a full-stack developer and technical lead. During the PhD I also did research internships at Los Alamos and Lawrence Livermore national laboratories.</p>
+      <p>Outside of work you'll usually find me hiking, at the dog park with my dog, playing guitar, or out to dinner with friends.</p>
+    </div>
+    <ul class="facts" aria-label="At a glance">
+      <li><span>PhD, Applied Mathematics, University of Arizona</span><span>2026</span></li>
+      <li><span>MS, Applied Mathematics, University of Arizona</span><span>2022</span></li>
+      <li><span>BS, Mathematics, Northern Arizona University</span><span>2015</span></li>
+      <li><span>Lawrence Livermore National Laboratory</span><span>2025</span></li>
+      <li><span>Los Alamos National Laboratory</span><span>2023, 2024</span></li>
+      <li><span>Nationwide Insurance</span><span>2016 to 2021</span></li>
+      <li><span>Based in Tucson, Arizona</span><span></span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band alt" id="research">
+  <div class="wrap">
+    <h2>Research</h2>
+    <div class="diss">
+      <h3>From knees to dislocations: order parameters from data for the phase grain boundaries of stripe patterns</h3>
+      <p class="meta">PhD dissertation, University of Arizona, 2026. Advised by Alan C. Newell and Shankar C. Venkataramani.</p>
+      <p>When two patches of stripes meet at an angle, they form a boundary. At shallow angles the stripes bend smoothly into a knee. At steep angles the boundary breaks into a periodic row of defects called dislocations. The classical phase theory of stripe patterns describes both extremes well, but not the angles in between, or how a knee turns into dislocations over time.</p>
+      <p>My dissertation develops ways to read a pattern's hidden variables (the local stripe direction and spacing, the amplitude, and where the defects sit) directly from simulation data, using Riesz and Hilbert transform methods. With those fields in hand, I test the phase theory against simulations of the Swift-Hohenberg equation, identify the equations the extracted fields actually obey, and follow how defects are born at the intermediate angles.</p>
+    </div>
+
+    <h3 class="sub">Machine learning for physical systems</h3>
+    <div class="rows">
+      <div class="row"><div class="when"><b>3D printing design</b>University of Arizona, 2025 to now</div><div><p>Generative models that propose topology-optimized designs for laser powder bed fusion, combined in a product-of-experts style to balance design specifications against manufacturability. With the Department of Systems and Industrial Engineering.</p></div></div>
+      <div class="row"><div class="when"><b>Atomic interfaces</b>Lawrence Livermore, 2025</div><div><p>Generating 3D solid-liquid interfaces in copper from molecular dynamics data with a score-based diffusion model, extending an existing implementation to larger domains and building the data processing and validation around it.</p></div></div>
+      <div class="row"><div class="when"><b>Turbulence</b>Los Alamos, Center for Nonlinear Studies, 2024</div><div><p>Diffusion models that generate turbulent flows and sharpen coarse ones, with a physical constraint built into the architecture that reduced physical inconsistency by two orders of magnitude.</p></div></div>
+      <div class="row"><div class="when"><b>Tsunami reconstruction</b>Los Alamos, 2023</div><div><p>A transformer that reconstructs full tsunami wavefields from a sparse network of ocean sensors, informed by seafloor depth and the shallow water equations. Published in Geophysical Research Letters.</p></div></div>
+      <div class="row"><div class="when"><b>Medical imaging</b>University of Arizona, 2021 to 2022</div><div><p>A forward solver for magneto-acousto-electric tomography, used to test methods for recovering tissue conductivity. Published in Inverse Problems.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="funding">
+  <div class="wrap">
+    <h2>Funding</h2>
+    <p class="note">Two internal University of Arizona proposals I co-wrote were funded. Both now support other graduate students.</p>
+    <div class="rows">
+      <div class="row"><div class="when"><b>Fusion imaging</b>Funded internal award</div><div><h3>Probabilistic 3D reconstruction for inertial confinement fusion</h3><p>Uncertainty-aware reconstruction of 3D implosion states from sparse diagnostics. A fellow graduate student and I wrote nearly all of it. It later grew into a multi-institutional proposal with partners at Lawrence Livermore, Los Alamos and the Laboratory for Laser Energetics.</p></div></div>
+      <div class="row"><div class="when"><b>Fusion materials</b>Funded internal award</div><div><h3>Large-scale virtual electron diffraction for bridging simulation and experiment of fusion materials</h3><p>Graph neural networks that predict electron backscatter diffraction patterns from large atomistic simulations of irradiated tungsten. I pitched the idea and wrote the first draft, then developed it with Marat Latypov (Materials Science and Engineering).</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="publications">
+  <div class="wrap two">
+    <div>
+      <h2>Publications</h2>
+      <ol class="pubs">
+        <li>E. McDugald, A. Mohan, D. Engwirda, J. E. Santos, A. Marcato. Attention-based reconstruction of full-field tsunami waves from sparse tsunameter networks. <span class="venue">Geophysical Research Letters</span> 52 (2025). <a href="https://doi.org/10.1029/2025GL115345">doi:10.1029/2025GL115345</a></li>
+        <li>L. Kunyansky, E. McDugald, B. Shearer. Weighted Radon transforms of vector fields, with applications to magnetoacoustoelectric tomography. <span class="venue">Inverse Problems</span> 39(6), 065014 (2023).</li>
+      </ol>
+    </div>
+    <div>
+      <h2>Talks</h2>
+      <ul class="plain">
+        <li>From knees to dislocations. Poster, Arizona and National Lab Days, Tucson, Nov 2026.</li>
+        <li>A generative model for solid-liquid interfaces. Los Alamos and Arizona Days, Los Alamos, Nov 2025.</li>
+        <li>Transformer-based reconstruction of tsunami waves from sparse observations. APS Division of Fluid Dynamics, Nov 2024; AGU Fall Meeting, Dec 2024; NeurIPS ML4PS workshop, Dec 2024.</li>
+        <li>Variational and machine learning approaches to defects in striped phases. SIAM Conference on Materials Science, Pittsburgh, May 2024.</li>
+      </ul>
+      <h3 class="sub" style="margin-top:34px">Honors and service</h3>
+      <ul class="plain">
+        <li>Al Scott Prize and Lecture, Applied Mathematics program, 2026 (co-winner)</li>
+        <li>Outreach coordinator, Applied Mathematics and Semiconductor Manufacturing Initiative, 2025 to 2026</li>
+        <li>President, SIAM Student Chapter, 2024 to 2025</li>
+        <li>Co-organizer, graduate Brown Bag seminar, 2024 to 2025</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band contact" id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p class="lead">Email is the best way to reach me: <a href="mailto:edward.mcdugald@gmail.com">edward.mcdugald@gmail.com</a></p>
+    <p>I'm also on <a href="https://github.com/EMcDugald">GitHub</a> and <a href="https://www.linkedin.com/in/edward-mcdugald">LinkedIn</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Edward McDugald, 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
